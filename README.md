@@ -7,7 +7,7 @@ A full-stack mobile application that allows users to create notes, upload PDFs, 
 This project demonstrates real-world engineering practices in building a cross-platform mobile application with:
 - **Mobile Frontend**: React Native with Expo, TypeScript, and modern hooks (Dark Theme)
 - **Backend API**: FastAPI with async background job processing
-- **AI Integration**: Groq API (free) or OpenAI GPT for intelligent summarization
+- **AI Integration**: Groq API (free, gpt oss 120b) or OpenAI GPT for intelligent summarization
 - **PDF Processing**: Text extraction from PDF documents
 
 ## ✨ Features
@@ -91,7 +91,7 @@ This project demonstrates real-world engineering practices in building a cross-p
 | Groq API | Primary summarization engine (FREE) |
 | OpenAI API | Alternative summarization (paid) |
 | HuggingFace | Local models option (optional) |
-| PyMuPDF | PDF text extraction |
+| pdfplumber | PDF text extraction |
 
 ## 📁 Project Structure
 
