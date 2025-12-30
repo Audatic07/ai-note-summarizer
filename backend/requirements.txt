@@ -1,0 +1,34 @@
+# AI Note Summarizer - Backend Dependencies
+# Run: pip install -r requirements.txt
+
+# Web Framework
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+
+# Data Validation
+pydantic==2.5.3
+pydantic-settings==2.1.0
+python-multipart==0.0.6  # For file uploads
+email-validator==2.1.0    # For email validation in schemas
+
+# Database
+sqlalchemy==2.0.25
+# For production, add: psycopg2-binary==2.9.9
+
+# AI / NLP
+openai==1.10.0            # OpenAI API client
+groq>=0.4.0               # Groq API client for fast LLaMA inference
+transformers>=4.36.0      # HuggingFace models (Pegasus, BART, etc.)
+torch>=2.1.0              # PyTorch backend for transformers
+sentencepiece>=0.1.99     # Required tokenizer for Pegasus
+
+# PDF Processing
+pdfplumber==0.10.3        # PDF text extraction (easier install than PyMuPDF)
+
+# Utilities
+python-dotenv==1.0.0      # Environment variable loading
+
+# Development
+pytest==7.4.4             # Testing
+pytest-asyncio==0.23.3    # Async test support
+httpx==0.26.0             # Async HTTP client for testing
